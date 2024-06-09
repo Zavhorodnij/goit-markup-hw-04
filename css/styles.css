@@ -82,6 +82,22 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  background-color: #404bbf;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+
 span {
   color: #2e2f42;
 }
@@ -106,16 +122,6 @@ span {
   color: #404bbf;
   display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation-link:after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
 }
 
 .navigation-link:hover {
