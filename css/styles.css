@@ -98,12 +98,23 @@ span {
 }
 
 .navigation-link {
+  position: relative;
   padding: 24px 0;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: #404bbf;
   display: block;
+}
+.navigation-link:after {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover {
@@ -118,24 +129,28 @@ span {
 .address {
   font-style: normal;
 }
-
-.address-contacts {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-.address-contacts:hover {
-  color: #404bbf;
-}
-.address-contacts:focus {
-  color: #404bbf;
-}
 .address-ul {
   display: flex;
   align-items: flex-end;
   gap: 40px;
 }
+.contact-mail .contact-tel {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+}
+
+
+.contact-mail .contact-tel:hover {
+  color: #404bbf;
+}
+.contact-mail .contact-tel:focus {
+  color: #404bbf;
+}
+
 
 /* Section 1 main ------------------------------------------------------------------------------------------------------------------------------*/
 .main-section {
@@ -189,6 +204,7 @@ span {
   color: #ffffff;
   cursor: pointer;
   background-color: #4d5ae5;
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section 2 Features------------------------------------------------------------------------------------------------------- */
