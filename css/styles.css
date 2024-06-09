@@ -105,6 +105,7 @@ span {
   letter-spacing: 0.02em;
   color: #404bbf;
   display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation-link:after {
   content: "";
@@ -115,7 +116,6 @@ span {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover {
@@ -135,18 +135,19 @@ span {
   align-items: flex-end;
   gap: 40px;
 }
-.contact-mail .contact-tel {
+.contact {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 
-.contact-tel:hover {
+.contact:hover {
   color: #404bbf;
 }
-.contact-tel:focus {
+.contact:focus {
   color: #404bbf;
 }
 
@@ -393,6 +394,7 @@ span {
 }
 .our-portfolio_li .section-four-text:hover {
 box-shadow : 0px 1px 6px rgba(46, 47, 66, 0.08),
+
 }
 .our-portfolio-img {
   position: relative;
