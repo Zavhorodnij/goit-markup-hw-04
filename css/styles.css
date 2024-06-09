@@ -107,6 +107,7 @@ span {
   display: block;
 }
 .navigation-link:after {
+  content: "";
   width: 100%;
   position: absolute;
   left: 0;
@@ -202,7 +203,7 @@ span {
   color: #ffffff;
   cursor: pointer;
   background-color: #4d5ae5;
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section 2 Features------------------------------------------------------------------------------------------------------- */
@@ -388,11 +389,22 @@ span {
 }
 .our-portfolio_li {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
-.container-h3_p {
+.our-portfolio_li .section-four-text:hover {
+box-shadow : 0px 1px 6px rgba(46, 47, 66, 0.08),
+}
+.our-portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.container-application {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+
 }
 .section-four-tittle {
   margin-bottom: 8px;
@@ -407,7 +419,30 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 40px 32px;
 }
+.section-four-text:hover {
+  transform: translateY(0%);
+}
+.our-portfolio-img {
+  position: relative;
+  overflow: hidden;
+
+}
+.our-portfolio-paragraph{
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 /* footer */
 
