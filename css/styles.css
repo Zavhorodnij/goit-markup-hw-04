@@ -579,7 +579,10 @@ span {
 }
 
 .footer-ul {
+  display: flex;
   gap: 16px;
+}
+.social-li {
   display: flex;
 }
 
