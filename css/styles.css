@@ -453,11 +453,19 @@ position: absolute;
 
 
 /* footer */
-
+.container-footer {
+  margin-right: 120px;
+}
 .footer {
   padding: 100px 0;
   background-color: #2e2f42;
 }
+
+.container-footer{
+  display: flex;
+    align-items: baseline;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -478,4 +486,12 @@ position: absolute;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.footer-social{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
 }
